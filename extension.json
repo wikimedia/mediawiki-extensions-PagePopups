@@ -1,0 +1,38 @@
+{
+	"name": "PagePopups",
+	"version": "0.0.1",
+	"author": [
+		"Victor Porton"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:PagePopups",
+	"descriptionmsg": "pagepopups-desc",
+	"license-name": "GPL-2.0+",
+	"type": "other",
+	"AutoloadClasses": {
+		"PagePopupsHooks": "PagePopups.hooks.php"
+	},
+	"Hooks": {
+		"BeforePageDisplay": [
+			"PagePopupsHooks::onBeforePageDisplay"
+		]
+	},
+	"ResourceModules": {
+		"ext.PagePopups.popup": {
+			"scripts": [
+				"PagePopups.js"
+			],
+			"styles": [
+				"PagePopups.css"
+			],
+			"dependencies": [
+                                "jquery.ui.dialog"
+			]
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "PagePopups"
+	},
+	"config": {},
+	"manifest_version": 1
+}
