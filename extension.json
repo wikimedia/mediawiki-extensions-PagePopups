@@ -24,7 +24,7 @@
 				"PagePopups.css"
 			],
 			"dependencies": [
-                                "jquery.ui.dialog"
+				"jquery.ui.dialog"
 			]
 		}
 	},
