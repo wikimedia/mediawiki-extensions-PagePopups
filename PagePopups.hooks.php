@@ -14,7 +14,7 @@ class PagePopupsHooks {
 		# $out->addStyle( "//code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" );
 		# $out->addModules( 'jquery' ); // loaded automatically
 		# $out->addModules( array('jquery.ui.dialog', 'ext.PagePopups.popup') );
-		$out->addModules( array( 'ext.PagePopups.popup' ) );
+		$out->addModules( [ 'ext.PagePopups.popup' ] );
 
 		return true; // TODO: needed?
 	}
