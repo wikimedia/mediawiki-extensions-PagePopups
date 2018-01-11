@@ -2,8 +2,8 @@
 
 class PagePopupsHooks {
 	/**
-	 * @param Skin $skin
-	 * @param string $text
+	 * @param OutputPage &$out
+	 * @param Skin &$skin
 	 * @return bool
 	 */
 	public static function onBeforePageDisplay( OutputPage &$out, Skin &$skin ) {
