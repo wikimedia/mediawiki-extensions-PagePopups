@@ -6,7 +6,13 @@
 	],
 	"url": "https://www.mediawiki.org/wiki/Extension:PagePopups",
 	"license-name": "GPL-2.0-or-later",
+	"descriptionmsg": "pagepopups-desc",
 	"type": "other",
+	"MessagesDirs": {
+		"PagePopups": [
+			"i18n"
+		]
+	},
 	"AutoloadClasses": {
 		"PagePopupsHooks": "PagePopups.hooks.php"
 	},
