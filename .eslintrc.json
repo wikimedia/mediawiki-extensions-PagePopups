@@ -11,7 +11,6 @@
 	},
 	"rules": {
 		"camelcase": "warn",
-		"vars-on-top": "warn",
 		"max-statements-per-line": "warn",
 		"no-use-before-define": "warn",
 		"no-jquery/variable-pattern": "warn",
