@@ -2,7 +2,9 @@
 	var dialog;
 
 	function click_body() {
-		if ( !dialog ) { return; }
+		if ( !dialog ) {
+			return;
+		}
 
 		// Must destroy the dialog, so that its resizing is not "remembered":
 		dialog.dialog( 'destroy' );
