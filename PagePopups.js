@@ -1,5 +1,5 @@
 ( function ( $ ) {
-	var dialog;
+	let dialog;
 
 	function click_body() {
 		if ( !dialog ) {
@@ -21,7 +21,7 @@
 			dialogClass: 'pagepopup-dialog'
 		} );
 		dialog.find( '.mw-pagepopup' ).click( initEvents );
-		dialog.click( function ( event ) {
+		dialog.click( ( event ) => {
 			event.stopPropagation();
 		} );
 		$( 'body' ).on( 'click', click_body );
@@ -30,16 +30,16 @@
 	function initEvents( event ) {
 		click_body();
 		$( 'body' ).off( 'click', click_body );
-		var href = $( this ).attr( 'href' ) || $( this ).children( 'a' ).attr( 'href' ),
+		const href = $( this ).attr( 'href' ) || $( this ).children( 'a' ).attr( 'href' ),
 			self = this;
-		$.get( href, { action: 'render' }, function ( data ) {
+		$.get( href, { action: 'render' }, ( data ) => {
 			showPopup( data, self );
 		} );
 		event.preventDefault(); // don't follow the link
 		event.stopPropagation(); // if the link is inside <span> with class="mw-pagepopup"
 	}
 
-	$( function () {
+	$( () => {
 		$( '.mw-pagepopup' ).on( 'click', initEvents );
 	} );
 }( jQuery ) );
